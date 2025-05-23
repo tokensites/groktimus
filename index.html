@@ -1,1 +1,134 @@
-wip
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groktimus - Grok Powered Optimus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px #a855f7, 0 0 20px #f97316;
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .neon-image-grok {
+            border: 3px solid #a855f7;
+            box-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7;
+            transition: transform 0.3s ease;
+        }
+        .neon-image-optimus {
+            border: 3px solid #f97316;
+            box-shadow: 0 0 15px #f97316, 0 0 30px #f97316;
+            transition: transform 0.3s ease;
+        }
+        .neon-image-grok:hover, .neon-image-optimus:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bgmachines-gray-900 py-6 sticky top-0 z-10 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold neon-glow">Groktimus</h1>
+            <nav>
+                <a href="#about" class="text-lg mx-4 hover:text-purple-400 transition">About</a>
+                <a href="#features" class="text-lg mx-4 hover:text-purple-400 transition">Features</a>
+                <a href="#community" class="text-lg mx-4 hover:text-purple-400 transition">Community</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-20 text-center">
+        <h2 class="text-5xl font-extrabold mb-6 neon-glow">Welcome to Groktimus</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+            Grok Powered Optimus: The crypto uniting AI wit and robotic might. Built for a smarter, stronger future!
+        </p>
+        <a href="#community" class="bg-purple-500 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-purple-400 transition animate-float">
+            Join the AI-Robot Revolution
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold mb-6 text-center neon-glow">Why Groktimus?</h3>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+            <img src="images/groktimus-grok.jpg" alt="Grok as a sleek, neon-lit AI avatar with a cosmic purple aura" class="w-64 h-64 object-cover rounded-lg neon-image-grok">
+            <p class="text-lg max-w-2xl text-center md:text-left">
+                Groktimus is the ultimate fusion of Grok’s cosmic intelligence and Optimus’s robotic prowess.
+                Inspired by xAI’s mission to advance humanity, this coin powers a blockchain where AI and automation
+                drive innovation. Join a community that’s as witty as Grok and as unstoppable as Optimus!
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-4 py-16 bg-gray-800">
+        <h3 class="text-3xl font-bold mb-12 text-center neon-glow">Groktimus Features</h3>
+        <div class="flex flex-col items-center mb-8">
+            <img src="images/groktimus-optimus.jpg" alt="Optimus as a rugged, futuristic humanoid robot with glowing orange accents" class="w-64 h-64 object-cover rounded-lg neon-image-optimus">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-900 rounded-lg shadow-lg text-center">
+                <h4 class="text-xl font-semibold mb-4">AI-Robotic Staking</h4>
+                <p>Stake tokens with AI-optimized strategies and robotic efficiency for max returns.</p>
+            </div>
+            <div class="p-6 bg-gray-900 rounded-lg shadow-lg text-center">
+                <h4 class="text-xl font-semibold mb-4">Automation Rewards</h4>
+                <p>Earn Groktimus by contributing to our automated, community-driven ecosystem.</p>
+            </div>
+            <div class="p-6 bg-gray-900 rounded-lg shadow-lg text-center">
+                <h4 class="text-xl font-semibold mb-4">Secure & Smart</h4>
+                <p>Powered by AI and blockchain, Groktimus is unhackable and built to scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="container mx-auto px-4 py-16 text-center">
+        <h3 class="text-3xl font-bold mb-6 neon-glow">Join the Groktimus Community</h3>
+        <p class="text-lg mb-8 max-w-2xl mx-auto">
+            Connect with AI and robotics fans in a community as bold as Grok and Optimus. Follow us on X,
+            join our newsletter, and shape the future of Groktimus!
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="https://x.com" target="_blank" class="bg-gray-700 px-6 py-3 rounded-full hover:bg-gray-600 transition">
+                Follow on X
+            </a>
+            <a href="#" class="bg-orange-500 text-gray-900 px-6 py-3 rounded-full hover:bg-orange-400 transition">
+                Subscribe
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Groktimus. Inspired by Grok & Optimus, created by xAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
