@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groktimus - Grok Powered Optimus</title>
+    <title>GrokTimus - Grok Powered Optimus</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -34,13 +34,20 @@
         .neon-image-grok:hover, .neon-image-optimus:hover {
             transform: scale(1.05);
         }
+        .copy-feedback {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .copy-feedback.show {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
     <!-- Header -->
-    <header class="bgmachines-gray-900 py-6 sticky top-0 z-10 shadow-lg">
+    <header class="bg-gray-900 py-6 sticky top-0 z-10 shadow-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold neon-glow">Groktimus</h1>
+            <h1 class="text-3xl font-bold neon-glow">GrokTimus</h1>
             <nav>
                 <a href="#about" class="text-lg mx-4 hover:text-purple-400 transition">About</a>
                 <a href="#features" class="text-lg mx-4 hover:text-purple-400 transition">Features</a>
@@ -49,9 +56,19 @@
         </div>
     </header>
 
+    <!-- Contract Address Section -->
+    <section class="container mx-auto px-4 py-6 text-center bg-gray-800">
+        <h3 class="text-xl font-bold mb-4 neon-glow">GrokTimus Contract Address</h3>
+        <div class="flex justify-center items-center gap-4">
+            <p id="contract-address" class="text-lg font-mono bg-gray-700 px-4 py-2 rounded-lg">0x1234...abcd</p>
+            <button id="copy-button" class="bg-purple-500 text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-purple-400 transition">Copy CA</button>
+            <span id="copy-feedback" class="copy-feedback text-purple-400">Copied!</span>
+        </div>
+    </section>
+
     <!-- Hero Section -->
     <section class="container mx-auto px-4 py-20 text-center">
-        <h2 class="text-5xl font-extrabold mb-6 neon-glow">Welcome to Groktimus</h2>
+        <h2 class="text-5xl font-extrabold mb-6 neon-glow">Welcome to GrokTimus</h2>
         <p class="text-xl mb-8 max-w-2xl mx-auto">
             Grok Powered Optimus: The crypto uniting AI wit and robotic might. Built for a smarter, stronger future!
         </p>
@@ -62,11 +79,11 @@
 
     <!-- About Section -->
     <section id="about" class="container mx-auto px-4 py-16">
-        <h3 class="text-3xl font-bold mb-6 text-center neon-glow">Why Groktimus?</h3>
+        <h3 class="text-3xl font-bold mb-6 text-center neon-glow">Why GrokTimus?</h3>
         <div class="flex flex-col md:flex-row items-center justify-center gap-8">
             <img src="images/groktimus-grok.jpg" alt="Grok as a sleek, neon-lit AI avatar with a cosmic purple aura" class="w-64 h-64 object-cover rounded-lg neon-image-grok">
             <p class="text-lg max-w-2xl text-center md:text-left">
-                Groktimus is the ultimate fusion of Grok’s cosmic intelligence and Optimus’s robotic prowess.
+                GrokTimus is the ultimate fusion of Grok’s cosmic intelligence and Optimus’s robotic prowess.
                 Inspired by xAI’s mission to advance humanity, this coin powers a blockchain where AI and automation
                 drive innovation. Join a community that’s as witty as Grok and as unstoppable as Optimus!
             </p>
@@ -75,39 +92,38 @@
 
     <!-- Features Section -->
     <section id="features" class="container mx-auto px-4 py-16 bg-gray-800">
-        <h3 class="text-3xl font-bold mb-12 text-center neon-glow">Groktimus Features</h3>
+        <h3 class="text-3xl font-bold mb-12 text-center neon-glow">GrokTimus Features</h3>
         <div class="flex flex-col items-center mb-8">
             <img src="images/groktimus-optimus.jpg" alt="Optimus as a rugged, futuristic humanoid robot with glowing orange accents" class="w-64 h-64 object-cover rounded-lg neon-image-optimus">
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="p-6 bg-gray-900 rounded-lg shadow-lg text-center">
-                <h4 class="text-xl font-semibold mb-4">AI-Robotic Staking</h4>
-                <p>Stake tokens with AI-optimized strategies and robotic efficiency for max returns.</p>
+                <h4 class="text-xl font-semibold mb-4">To the Moon!</h4>
+                <p>Join the GrokTimus hype train—buy, hodl, and watch it moon with Grok & Optimus vibes! 🚀</p>
             </div>
             <div class="p-6 bg-gray-900 rounded-lg shadow-lg text-center">
-                <h4 class="text-xl font-semibold mb-4">Automation Rewards</h4>
-                <p>Earn Groktimus by contributing to our automated, community-driven ecosystem.</p>
+                <h4 class="text-xl font-semibold mb-4">Meme & Win</h4>
+                <p>Make memes, win big—GrokTimus giveaways reward the dankest community creators! 🤑</p>
             </div>
             <div class="p-6 bg-gray-900 rounded-lg shadow-lg text-center">
-                <h4 class="text-xl font-semibold mb-4">Secure & Smart</h4>
-                <p>Powered by AI and blockchain, Groktimus is unhackable and built to scale.</p>
+                <h4 class="text-xl font-semibold mb-4">Party Hard</h4>
+                <p>Trade with the fam—GrokTimus is your ticket to the wildest crypto party on the blockchain! 🎉</p>
             </div>
         </div>
     </section>
 
     <!-- Community Section -->
     <section id="community" class="container mx-auto px-4 py-16 text-center">
-        <h3 class="text-3xl font-bold mb-6 neon-glow">Join the Groktimus Community</h3>
+        <h3 class="text-3xl font-bold mb-6 neon-glow">Join the GrokTimus Community</h3>
         <p class="text-lg mb-8 max-w-2xl mx-auto">
-            Connect with AI and robotics fans in a community as bold as Grok and Optimus. Follow us on X,
-            join our newsletter, and shape the future of Groktimus!
+            Connect with AI and robotics fans in a community as bold as Grok and Optimus. Follow us on X and shape the future of GrokTimus!
         </p>
         <div class="flex justify-center gap-4">
-            <a href="https://x.com" target="_blank" class="bg-gray-700 px-6 py-3 rounded-full hover:bg-gray-600 transition">
+            <a href="https://x.com/GrokTimusX" target="_blank" rel="noopener noreferrer" class="bg-gray-700 px-6 py-3 rounded-full hover:bg-gray-600 transition">
                 Follow on X
             </a>
-            <a href="#" class="bg-orange-500 text-gray-900 px-6 py-3 rounded-full hover:bg-orange-400 transition">
-                Subscribe
+            <a href="https://dexscreener.com/solana/gyxrjx3jwlkkgbsy9vt3xmamqake6uupzbzjvte5puj1" target="_blank" rel="noopener noreferrer" class="bg-orange-500 text-gray-900 px-6 py-3 rounded-full hover:bg-orange-400 transition">
+                DexScreener
             </a>
         </div>
     </section>
@@ -115,18 +131,38 @@
     <!-- Footer -->
     <footer class="bg-gray-900 py-6 mt-auto">
         <div class="container mx-auto px-4 text-center">
-            <p>© 2025 Groktimus. Inspired by Grok & Optimus, created by xAI. All rights reserved.</p>
+            <p>© 2025 GrokTimus. Inspired by Grok & Optimus, created by xAI. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Smooth Scroll Script -->
+    <!-- Smooth Scroll and Copy CA Script -->
     <script>
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        // Copy CA to Clipboard
+        const copyButton = document.getElementById('copy-button');
+        const contractAddress = document.getElementById('contract-address').textContent;
+        const copyFeedback = document.getElementById('copy-feedback');
+
+        copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(contractAddress).then(() => {
+                copyFeedback.classList.add('show');
+                setTimeout(() => copyFeedback.classList.remove('show'), 2000);
+            });
+        });
+
+        // Debug External Links
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                console.log('Link clicked:', link.href);
             });
         });
     </script>
